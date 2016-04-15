@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+     <script type="text/javascript" src="main.js">
+    <h1>Hello World!</h1>
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+<img id="myImage" >,
+    <button id="openFile" onclick="openFile();">Open</button>
+<button id="saveFile">Save</button><br />
+<br />
+<textarea id="editor" style="width: 400px; height: 300px;"></textarea>
+<script>
+ var remote = require('remote');
+ var dialog = remote.require('dialog');
+</script>
+
+  </body>
+</html>
